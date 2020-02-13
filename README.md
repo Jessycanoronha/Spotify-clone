@@ -1,5 +1,5 @@
 # spotif
-<img src=".src/assets/logo.png" alt="Logo">
+<img src="src/assets/logo.png" alt="Logo">
 
 
 ## Project setup
