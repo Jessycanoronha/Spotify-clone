@@ -1,4 +1,4 @@
-# spotif
+# Music player with vue.js 
 <img src="src/assets/logo.png" alt="Logo">
 
 
