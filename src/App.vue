@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <header>
-      <h1>My Music</h1>
+      
+      <img class="logo" src="./assets/logo.png" alt="logo.png"/>
     </header>
     <main>
       <section class="player">
@@ -32,16 +33,7 @@ export default {
       index: 0,
       isPlaying: false,
       songs: [
-        {
-          title: 'Grateful',
-          artist: 'Neffex',
-          src: require('./assets/neffex-grateful.mp3')
-        },
-        {
-          title: 'Invincible',
-          artist: 'Deaf Kev',
-          src: require('./assets/deaf-kev-invincible.mp3')
-        },
+       
         {
           title: 'All of me',
           artist: 'John Legend',
@@ -51,6 +43,36 @@ export default {
           title: 'Penthouse floor',
           artist: 'John Legend',
           src: require('./assets/[Waploaded]John_Legend_-_Penthouse_Floor_ft_Chance_The_Rapper-1479326105.mp3')
+        },
+        {
+          title: 'Mato no peito',
+          artist: 'L7nnon',
+          src: require('./assets/01. L7NNON - Mato no Peito.mp3')
+        },
+        {
+          title: 'Treinado',
+          artist: 'L7nnon',
+          src: require('./assets/02. L7NNON - Treinado.mp3')
+        },
+        {
+          title: 'Despertadores',
+          artist: 'L7nnon',
+          src: require('./assets/03. L7NNON - Despertadores.mp3')
+        },
+        {
+          title: 'Já venci',
+          artist: 'L7nnon',
+          src: require('./assets/04.  L7NNON - Já Venci.mp3')
+        },
+        {
+          title: 'Ninguém',
+          artist: 'L7nnon',
+          src: require('./assets/08. L7NNON Part. Mv Bill - Ninguém.mp3')
+        },
+        {
+          title: 'Podium',
+          artist: 'L7nnon',
+          src: require('./assets/07. L7NNON - Podium.mp3')
         }
       ],
       player: new Audio()
@@ -119,9 +141,12 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 15px;
-	background-color: #212121;
+	padding: 0;
+	background-color: #f3e9e940;
 	color: #FFF;
+}
+.logo{
+  height:15em;
 }
 main {
   width: 100%;
@@ -167,7 +192,7 @@ button:hover {
   margin: 0px 15px;
   border-radius: 8px;
   color: #FFF;
-  background-color: #CC2E5D;
+  background-color: #c00480;
 }
 
 .next, .prev {
@@ -204,6 +229,6 @@ button:hover {
 
 .playlist .song.playing {
   color: #FFF;
-  background-image: linear-gradient(to right, #CC2E5D, #FF5858);
+  background-image: linear-gradient(to right, #c00480, #FF5858);
 }
 </style>
